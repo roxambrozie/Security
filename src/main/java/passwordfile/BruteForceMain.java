@@ -1,15 +1,15 @@
 package passwordfile;
 
-public class MultiThreadMain {
+public class BruteForceMain {
 
     public static void main(String[] args) {
 
         Thread t = new Thread(new MultiThread(), "A");
-        Thread t1 = new Thread(new BruteForceTest(), "B");
-        Thread t2 = new Thread(new BruteForceTest(), "C");
+        Thread t1 = new Thread(new MultiThread(), "B");
+        Thread t2 = new Thread(new MultiThread(), "C");
         t.start();
-        t1.start();
-        t2.start();
+//        t1.start();
+//        t2.start();
 
 
 

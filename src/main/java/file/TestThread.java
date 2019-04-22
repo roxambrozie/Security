@@ -1,4 +1,4 @@
-package passwordfile;
+package file;
 
 import java.io.IOException;
 
